@@ -1,0 +1,42 @@
+/* Sets the font for the page */
+#home-body{
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* jumbotron styling */
+.jumbotron{
+    color: #f1c40f;
+    background-repeat: no-repeat;
+    height: 30vw;
+}
+
+/* alignging content inside jumbotron */
+#jumbotron-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+/* text background inside jumbotron*/
+#text-background{
+    padding: 2vh;
+    background-color: black;
+    opacity: .6;
+    text-align: center;
+}
+
+/* styling of the cards below the jumbotron */
+#card-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3vh;
+}
+
+/* margin between cards below jumbotron */
+#home-card {
+    margin: 3vw;
+}
