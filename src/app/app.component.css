@@ -1,0 +1,15 @@
+#header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header img{
+    max-height: 75px;
+    max-width: 75px;
+
+}
+
+#header h1{
+    font-size: 16pt;
+}
