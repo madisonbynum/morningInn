@@ -8,8 +8,6 @@ import { StepCounterService } from 'src/app/service/step-counter.service';
 })
 export class RoomViewComponent implements OnInit {
 
-  // boolean below related to the step counter ngIf
-
   constructor(private stepCounter: StepCounterService) {
 
   }

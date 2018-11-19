@@ -10,7 +10,7 @@ Booking, summary, and Thankyou page -->
 
     <!-- Li's of step 1 -->
     <!-- Step 1 should only be active if on Roomview -->
-    <li class="progress-step is-active"  *ngIf="this.stepCounter.isOnRoomView == true ; else rVComplete">
+    <li class="progress-step is-active"  *ngIf="this.stepCounter.isOnRoomView == true; else rVComplete">
       <span class="progress-marker"></span>
       <span class="progress-text">
         <h4 class="progress-title"> 1</h4>
@@ -58,7 +58,7 @@ Booking, summary, and Thankyou page -->
 
     <!-- Li's of step 3 -->
     <!-- Step 3 should be inactive and not complete when on step 1 and 2 -->
-    <li class="progress-step" *ngIf="(this.stepCounter.isOnRoomView || this.stepCounter.isOnBooking) == true; else sTwoComplete">
+    <li class="progress-step" *ngIf="this.stepCounter.isOnRoomView == true || this.stepCounter.isOnBooking == true; else sTwoComplete">
       <span class="progress-marker"></span>
       <span class="progress-text">
           <h4 class="progress-title"> 3</h4>
@@ -87,7 +87,7 @@ Booking, summary, and Thankyou page -->
 
     <!-- Li's of step 4 -->
     <!-- Step 4 should be inactive and not complete when on any step other than 4 -->
-    <li class="progress-step" *ngIf="this.stepCounter.isOnRoomView == true || this.stepCounter.isOnBooking == true || this.stepCounter.isOnSummary == true; else sThreeComplete">
+    <li class="progress-step" *ngIf="this.stepCounter.isOnRoomView == true || this.stepCounter.isOnBooking == true|| this.stepCounter.isOnSummary == true; else sThreeComplete">
       <span class="progress-marker"></span>
       <span class="progress-text">
           <h4 class="progress-title"> 4</h4>
