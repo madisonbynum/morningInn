@@ -8,19 +8,12 @@ import { StepCounterService } from 'src/app/service/step-counter.service';
 })
 export class ThankYouComponent implements OnInit {
 
-  isOnRoomView = false;
-  isOnBooking = false;
-  isOnSummary = false;
-
   constructor(private stepCounter: StepCounterService) {
-
-  this.isOnRoomView = this.stepCounter.isOnRoomView;
-  this.isOnBooking = this.stepCounter.isOnBooking;
-  this.isOnSummary = this.stepCounter.isOnSummary;
 
   }
 
   ngOnInit() {
+    this.stepCounter.step3();
   }
 
 }
