@@ -8,11 +8,13 @@ import { StepCounterService } from 'src/app/service/step-counter.service';
 })
 export class SummaryComponent implements OnInit {
 
+
   constructor(private stepCounter: StepCounterService) {
+
   }
 
   ngOnInit() {
-    this.stepCounter.step2();
+    this.stepCounter.step3();
   }
 
 }

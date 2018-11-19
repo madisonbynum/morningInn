@@ -1,5 +1,14 @@
 #gen-navbar {
-    background: #f1c40f;
+    background: #ee8409;
+    margin: 0;
+    padding: 0;
+    color: black;
+    border: none;
+    border-radius: 0%;
+}
+
+#nav-font-color{
+    color: black;
 }
 
 .nav {

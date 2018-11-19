@@ -8,12 +8,13 @@ import { StepCounterService } from 'src/app/service/step-counter.service';
 })
 export class ThankYouComponent implements OnInit {
 
-  constructor(private stepCounter: StepCounterService) {
 
+
+  constructor(private stepCounter: StepCounterService) {
   }
 
   ngOnInit() {
-    this.stepCounter.step3();
+    this.stepCounter.step4();
   }
 
 }
