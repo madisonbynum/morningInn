@@ -57,7 +57,7 @@ input{
     background: rgb(238, 163, 66);
 }
 #dropdownBasic1{
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0d);
     color: rgb(238, 163, 66);
     border: none;
     width: 150px;
