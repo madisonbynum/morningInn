@@ -8,6 +8,7 @@ import { RoomViewComponent } from './components/room-view/room-view.component';
 import { BookingComponent } from './components/booking/booking.component';
 import { SummaryComponent } from './components/summary/summary.component';
 import { ThankYouComponent } from './components/thank-you/thank-you.component';
+import { StepCounterComponent } from './components/step-counter/step-counter.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ThankYouComponent } from './components/thank-you/thank-you.component';
     RoomViewComponent,
     BookingComponent,
     SummaryComponent,
-    ThankYouComponent
+    ThankYouComponent,
+    StepCounterComponent
   ],
   imports: [
     BrowserModule,
