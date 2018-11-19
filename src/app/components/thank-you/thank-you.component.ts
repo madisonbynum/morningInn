@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { StepCounterService } from 'src/app/service/step-counter.service';
 
 @Component({
   selector: 'app-thank-you',
@@ -7,7 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ThankYouComponent implements OnInit {
 
-  constructor() { }
+  isOnRoomView = false;
+  isOnBooking = false;
+  isOnSummary = false;
+
+  constructor(private stepCounter: StepCounterService) {
+
+  this.isOnRoomView = this.stepCounter.isOnRoomView;
+  this.isOnBooking = this.stepCounter.isOnBooking;
+  this.isOnSummary = this.stepCounter.isOnSummary;
+
+  }
 
   ngOnInit() {
   }
