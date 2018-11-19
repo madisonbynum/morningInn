@@ -1,0 +1,83 @@
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 70vw;
+    height: 40vh;
+    margin-right: 30px;
+    margin: 0 auto;    
+    border-radius: 5px;
+}
+.inputSide{
+    padding: 0px;
+    margin-right: 10px;
+}
+.checkCon{
+    padding: 0px;
+    margin: 0px;
+}
+.sideLabel{
+   padding: 0px;
+   margin: 2px;
+   color: rgb(255, 255, 255);
+   font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+#dropMenu{
+    border: solid 2px rgb(195, 223, 255);
+    background: rgb(159, 204, 255);
+    margin: 0 auto;
+    padding:10px;
+}
+input{
+    text-align: center;
+    border-radius: 5px;
+    background: rgb(255, 252, 232);
+    border: none;
+}
+#buttonSide{
+    display:flex; 
+    flex-direction: row;
+    align-content: space-around;
+    padding: 0px;
+}
+#nextButton{
+    margin-left:0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100px;
+    background:rgb(238, 163, 66);    
+    color: white;
+    border: none
+}
+#nextButton:hover{
+    background: rgb(54, 189, 252);
+}
+#nextButton:focus{
+    background: rgb(238, 163, 66);
+}
+#dropdownBasic1{
+    background: rgba(0, 0, 0, 0.6);
+    color: rgb(238, 163, 66);
+    border: none;
+    width: 150px;
+    margin: 5px;
+
+}
+#dropdownBasic1:active{
+    border:none;
+}
+#contianerInOut{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width:90%;
+    background:rgb(105, 164, 231);
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+.dropdown-item:hover{
+background: none;
+}
