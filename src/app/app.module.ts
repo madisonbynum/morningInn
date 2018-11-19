@@ -9,6 +9,7 @@ import { BookingComponent } from './components/booking/booking.component';
 import { SummaryComponent } from './components/summary/summary.component';
 import { ThankYouComponent } from './components/thank-you/thank-you.component';
 import { GeneralNavbarComponent } from './components/general-navbar/general-navbar.component';
+import { StepCounterComponent } from './components/step-counter/step-counter.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { GeneralNavbarComponent } from './components/general-navbar/general-navb
     BookingComponent,
     SummaryComponent,
     ThankYouComponent,
-    GeneralNavbarComponent
+    GeneralNavbarComponent,
+    StepCounterComponent
   ],
   imports: [
     BrowserModule,
