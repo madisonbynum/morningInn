@@ -8,6 +8,7 @@ import { RoomViewComponent } from './components/room-view/room-view.component';
 import { BookingComponent } from './components/booking/booking.component';
 import { SummaryComponent } from './components/summary/summary.component';
 import { ThankYouComponent } from './components/thank-you/thank-you.component';
+import { GeneralNavbarComponent } from './components/general-navbar/general-navbar.component';
 import { StepCounterComponent } from './components/step-counter/step-counter.component';
 
 @NgModule({
@@ -18,6 +19,7 @@ import { StepCounterComponent } from './components/step-counter/step-counter.com
     BookingComponent,
     SummaryComponent,
     ThankYouComponent,
+    GeneralNavbarComponent,
     StepCounterComponent
   ],
   imports: [
