@@ -27,6 +27,12 @@ export class StepCounterService {
     this.isOnSummary = true;
   }
 
+   step4() {
+    this.isOnRoomView = false;
+    this.isOnBooking = false;
+    this.isOnSummary = false;
+  }
+
   constructor() {
 
   }
