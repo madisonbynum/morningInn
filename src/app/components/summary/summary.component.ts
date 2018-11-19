@@ -12,6 +12,7 @@ export class SummaryComponent implements OnInit {
   constructor(private stepCounter: StepCounterService) {
 
   }
+
   ngOnInit() {
     this.stepCounter.step3();
   }
