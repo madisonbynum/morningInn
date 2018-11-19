@@ -9,19 +9,13 @@ import { StepCounterService } from 'src/app/service/step-counter.service';
 export class RoomViewComponent implements OnInit {
 
   // boolean below related to the step counter ngIf
-  isOnRoomView = true;
-  isOnBooking = false;
-  isOnSummary = false;
 
   constructor(private stepCounter: StepCounterService) {
-
-  this.isOnRoomView = this.stepCounter.isOnRoomView;
-  this.isOnBooking = this.stepCounter.isOnBooking;
-  this.isOnSummary = this.stepCounter.isOnSummary;
 
   }
 
   ngOnInit() {
+    this.stepCounter.step1();
   }
 
 }
