@@ -1,17 +1,14 @@
 <div id="sidebar">
       <div id="contianerInOut">
-        <div class="checkCon">
-          <label class="sideLabel">Check In&nbsp;&nbsp;</label>
-          <input class="inputSide" type="date">
-        </div>
-        <div class="checkCon">
-          <label class="sideLabel">Check Out&nbsp;&nbsp;</label>
-          <input class="inputSide" type="date">
-        </div>
-      </div>
+        <div>
+          <label for="checkIn">Check In&nbsp;&nbsp;</label>
+          <input ng-model="checkIn" type="date" id="checkIn" placeholder="01/01/2018">
+          <label for="checkOut">Check Out&nbsp;&nbsp;</label>
+          <input ng-model="checkOut" type="date" id="checkOut" placeholder="01/01/2018">
+         </div>
       <div class="btn-group"></div>
       <div id="buttonSide">
-          <button routerLink="/viewRoom" (click)="submit()"id="nextButton" class="btn btn-primary" type="submit">Next Step</button>
+          <button (click)="submit()"id="nextButton" class="btn btn-primary" type="submit">Next Step</button>
             <div ngbDropdown class="d-inline-block">
               <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Advance Settings</button>
               <div ngbDropdownMenu aria-labelledby="dropdownBasic1" id="dropMenu">
