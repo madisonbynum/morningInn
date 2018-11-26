@@ -14,8 +14,8 @@
 
 /* alignging content inside jumbotron */
 #jumbotron-container{
-    /* display: flex; */
-    flex-direction: column;
+    display: flex;
+    flex-direction: row-reverse;
     /* justify-content: flex-end; */
     /* align-content: center; */
 }
@@ -32,10 +32,13 @@
 
 /* text background inside jumbotron*/
 #text-background{
-    padding: 2vh;
+    padding: 3vh;
     background-color: black;
     opacity: .6;
     text-align: center;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
   
 
 }
