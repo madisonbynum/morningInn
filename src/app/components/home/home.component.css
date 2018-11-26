@@ -8,14 +8,26 @@
     color: #f1c40f;
     background-repeat: no-repeat;
     height: 30vw;
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* alignging content inside jumbotron */
 #jumbotron-container{
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
-    justify-content: flex-start;
-    align-content: center;
+    /* justify-content: flex-end; */
+    /* align-content: center; */
+}
+
+#jumbotron-container > div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#move-right{
+    /* display: flex; */
+    /* justify-content: flex-end; */
 }
 
 /* text background inside jumbotron*/
@@ -24,6 +36,8 @@
     background-color: black;
     opacity: .6;
     text-align: center;
+  
+
 }
 
 /* styling of the cards below the jumbotron */
