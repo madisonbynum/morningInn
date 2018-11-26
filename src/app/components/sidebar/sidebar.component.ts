@@ -47,12 +47,4 @@ submit() {
   this.router.navigateByUrl('/viewRoom');
 }
 
-isChecked(item1) {
-if (item1 === 'on') {
- console.log(true);
-} else {
-  console.log(false);
-}
-}
-
 }
