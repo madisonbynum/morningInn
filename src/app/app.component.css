@@ -1,7 +1,9 @@
 #header{
     display: flex;
     justify-content: space-around;
-    align-items: flex-start
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
 }
 
 #header img{
@@ -12,4 +14,44 @@
 
 #header h1{
     font-size: 16pt;
+    align-self: flex-start;
 }
+
+#inner-header-div{
+    align-self: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.page-header{
+    align-self: flex-start;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    
+
+}
+
+#link-list {
+    display: flex;
+    justify-content: center;
+    /* flex-direction: row; */
+    /* padding: 10px; */
+
+}
+
+#link-list a, h1 {
+text-align: center;
+/* padding-left: 10px; */
+padding-top: 10px;
+padding-right: 10px;
+font-size: 12pt;
+}
+
+#hotel-icon:hover{
+    cursor: pointer;
+}
+
