@@ -1,5 +1,15 @@
 <div id="sidebar">
       <div id="contianerInOut">
+          <div>
+          <label for="checkIn">Check In&nbsp;&nbsp;</label>
+          <input ng-model="checkIn" type="date" id="checkIn" placeholder="01/01/2018">
+          <label for="checkOut">Check Out&nbsp;&nbsp;</label>
+          <input ng-model="checkOut" type="date" id="checkOut" placeholder="01/01/2018">
+         </div>
+      <div class="btn-group"></div>
+      <div id="buttonSide">
+          <button (click)="submit()"id="nextButton" class="btn btn-primary" type="submit">Next Step</button>
+        
         <div class="checkCon">
           <label class="sideLabel">Check In&nbsp;&nbsp;</label>
           <input class="inputSide" type="date">
