@@ -1,22 +1,14 @@
 <div id="sidebar">
-      <div id="contianerInOut">
-          <div>
-          <label for="checkIn">Check In&nbsp;&nbsp;</label>
-          <input ng-model="checkIn" type="date" id="checkIn" placeholder="01/01/2018">
-          <label for="checkOut">Check Out&nbsp;&nbsp;</label>
-          <input ng-model="checkOut" type="date" id="checkOut" placeholder="01/01/2018">
-         </div>
-      <div class="btn-group"></div>
-      <div id="buttonSide">
-          <button (click)="submit()"id="nextButton" class="btn btn-primary" type="submit">Next Step</button>
-        
+  <div id="contianerInOut">
+    <div class="btn-group"></div>
+      <div id="buttonSide">        
         <div class="checkCon">
           <label class="sideLabel">Check In&nbsp;&nbsp;</label>
-          <input class="inputSide" type="date">
+          <input class="inputSide" type="date" id="checkIn">
         </div>
         <div class="checkCon">
           <label class="sideLabel">Check Out&nbsp;&nbsp;</label>
-          <input class="inputSide" type="date">
+          <input class="inputSide" type="date" id="checkOut">
         </div>
         <div id="buttonSide">
           <button routerLink="/viewRoom" (click)="submit()"id="nextButton" class="btn btn-primary" type="submit">Next Step</button>
@@ -51,41 +43,7 @@
                 </a>
               </div>
             </div>
+        </div>
       </div>
-      </div>
-      <div class="btn-group"></div>
-      <!-- <div id="buttonSide">
-          <button routerLink="/viewRoom" (click)="submit()"id="nextButton" class="btn btn-primary" type="submit">Next Step</button>
-            <div ngbDropdown class="d-inline-block">
-              <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Advance Settings</button>
-              <div ngbDropdownMenu aria-labelledby="dropdownBasic1" id="dropMenu">
-                <a class="dropdown-item">
-                  <input type="checkbox" id="nonSmoking">
-                  <label class="sideLabel">&nbsp;&nbsp;Non-Smoking</label>
-                </a>
-                <a class="dropdown-item">
-                  <input type="checkbox" id="roomService">
-                  <label class="sideLabel">&nbsp;&nbsp;Room Service</label>
-                </a>
-                <a class="dropdown-item">
-                  <input type="checkbox" id="petFriendly">
-                  <label class="sideLabel">&nbsp;&nbsp;Pet Friendly</label>
-                </a>
-                <a class="dropdown-item">
-                  <input type="checkbox" id="houseKeeping">
-                  <label class="sideLabel">&nbsp;&nbsp;House Keeping</label>
-                </a>
-                <a class="dropdown-item">
-                  <label for="sel1">People:</label>
-                  <select class="form-control" id="sel1">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                  </select>
-                </a>
-              </div>
-            </div>
-      </div> -->
+      <div class="btn-group"></div>    
   </div>
