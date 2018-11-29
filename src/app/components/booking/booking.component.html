@@ -1,3 +1,36 @@
-<h1>Booking page</h1>
+<h1>Guest Information <small>Please input your information in the form below</small></h1>
 <app-step-counter class="d-flex justify-content-end" id="step-counter"></app-step-counter>
-<button type="button" class="btn btn-primary" id="home-button" routerLink="/summary">Book a room</button>
+<section>
+    <form>
+   
+       
+        <!-- <div class="col-md-4 col-sm-2 col-xs-0"></div>
+        <div id="centered-content" class="col-md-4 col-sm-8 col-xs-12">
+            -->
+        <div class="form-group">
+            <label for="firstName">First Name: </label>
+            <input [(ngModel)]="firstName" type="text" id="firstName" class="form-control" name="firstName"><br>
+        </div>
+
+        <div class="form-group">
+            <label for="lastName">Last Name: </label>
+            <input [(ngModel)]="lastName" type="text" id="lastName" class="form-control" name="lastName"><br>
+        </div>
+
+        <div class="form-group">
+            <label for="phoneNumber">Phone Number: </label>
+            <input [(ngModel)]="phoneNumber" type="text" id="phoneNumber" class="form-control" name="phoneNumber"><br>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email: </label>
+            <input [(ngModel)]="email" type="text" id="email" class="form-control" name="email"><br>
+        </div>
+            
+            <button (click)="submit()" type="button" class="btn btn-primary d-flex justify-content-center" routerLink="/summary">Submit</button>
+          <!-- </div>
+          <div class="col-md-4 col-sm-2 col-xs-0"></div>
+         -->
+    </form>
+  </section>
+
