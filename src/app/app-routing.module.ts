@@ -6,6 +6,7 @@ import { BookingComponent } from './components/booking/booking.component';
 import { SummaryComponent } from './components/summary/summary.component';
 import { ThankYouComponent } from './components/thank-you/thank-you.component';
 
+
 const routes: Routes = [{
   component: HomeComponent,
   path: ''

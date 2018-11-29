@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +15,9 @@ import { GeneralNavbarComponent } from './components/general-navbar/general-navb
 import { StepCounterComponent } from './components/step-counter/step-counter.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { TransitionsComponent } from './components/transitions/transitions.component';
+
+import { CreateGuestService } from './services/create-guest.service';
+
 
 @NgModule({
   declarations: [
@@ -30,9 +35,15 @@ import { TransitionsComponent } from './components/transitions/transitions.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    CreateGuestService
+  ],
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }
