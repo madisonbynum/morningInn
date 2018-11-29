@@ -1,4 +1,49 @@
 <app-sidebar></app-sidebar>
-<h1>Room View Page</h1>
 <app-step-counter class="d-flex justify-content-end" id="step-counter"></app-step-counter>
+<div id="roomView">
+    <div id="sidebarCon">
+        <ul id="sidebarRoomList">
+            <li class="sidebarRoomItem">
+                <input type="checkbox" id="1">
+            </li>
+            <br>
+            <li class="sidebarRoomItem">
+                <input type="checkbox" id="2">
+            </li>
+            <br>
+            <li class="sidebarRoomItem">
+                <input type="checkbox" id="3">
+            </li>
+            <br>
+            <li class="sidebarRoomItem">
+                <input type="checkbox" id="4">
+            </li>
+            <br>
+            <li class="sidebarRoomItem">
+                <input type="checkbox" id="5">
+            </li>
+            <br>
+            <li class="sidebarRoomItem">
+                <input type="checkbox" id="6">
+            </li>
+            <br>
+            <li class="sidebarRoomItem">
+                <input type="checkbox" id="7">
+            </li>
+        </ul>
+        <button (click)="submit()" id="refreshButton" class="btn btn-primary" type="submit">Refresh</button>
+    </div>
+    <div id="roomCon">
+    <ng-container>
+        <div class='individualRoomCon'> 
+           <div id='roomImage'>
+                <img alt="See the source image" src="http://images.clipartpanda.com/example-clipart-canstock6911432.jpg">
+            </div>
+            <div id='roomInfoCon'>
+
+            </div>
+        </div>
+    </ng-container>
+    </div>
+</div>
 <button type="button" class="btn btn-primary" id="home-button" routerLink="/booking">Book a room</button>

@@ -33,17 +33,20 @@ submit() {
   const checkOut = y.split('-');
   const dateIn = checkIn[1] + '/' + checkIn[2] + '/' + checkIn[0];
   const dateOut = checkOut[1] + '/' + checkOut[2] + '/' + checkOut[0];
-
+console.log(dateIn);
+console.log(dateOut);
+console.log(NonSmoking);
+console.log(People);
   const checkInObject = {
-    checkin: dateIn,
-    checkout: dateOut,
-    smoking: NonSmoking,
-    roomService: RoomService,
-    petFriendly: PetFriendly,
-    houseKeeping: HouseKeeping,
-    people: People
+    'checkIn': dateIn,
+    'checkOut': dateOut,
+    'smoking': NonSmoking,
+    'Room Service': RoomService,
+    'Pet Friendly': PetFriendly,
+    'House Keeping': HouseKeeping,
+    'People': People
   };
-
+  console.log(checkInObject);
   this.router.navigateByUrl('/viewRoom');
 }
 
