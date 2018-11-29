@@ -18,6 +18,15 @@ import { TransitionsComponent } from './components/transitions/transitions.compo
 
 import { CreateGuestService } from './services/create-guest.service';
 
+import { EmployeeLoginComponent } from './components/employee-login/employee-login.component';
+import { EmployeeHomeComponent } from './components/employee-home/employee-home.component';
+import { CheckInComponent } from './components/check-in/check-in.component';
+import { CheckOutComponent } from './components/check-out/check-out.component';
+import { BlockRoomComponent } from './components/block-room/block-room.component';
+import { CancelResComponent } from './components/cancel-res/cancel-res.component';
+import { EmployeeLoginService } from './services/employee-login.service';
+import { EmployeeNavBarComponent } from './components/employee-nav-bar/employee-nav-bar.component';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +39,14 @@ import { CreateGuestService } from './services/create-guest.service';
     GeneralNavbarComponent,
     StepCounterComponent,
     SidebarComponent,
-    TransitionsComponent
+    TransitionsComponent,
+    EmployeeLoginComponent,
+    EmployeeHomeComponent,
+    CheckInComponent,
+    CheckOutComponent,
+    BlockRoomComponent,
+    CancelResComponent,
+    EmployeeNavBarComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +56,8 @@ import { CreateGuestService } from './services/create-guest.service';
     HttpClientModule
   ],
   providers: [
-    CreateGuestService
+    CreateGuestService,
+    EmployeeLoginService
   ],
   bootstrap: [
     AppComponent
