@@ -12,7 +12,7 @@ import { ThankYouComponent } from './components/thank-you/thank-you.component';
 import { GeneralNavbarComponent } from './components/general-navbar/general-navbar.component';
 import { StepCounterComponent } from './components/step-counter/step-counter.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
-import { StepCounterService } from './service/step-counter.service';
+import { TransitionsComponent } from './components/transitions/transitions.component';
 
 @NgModule({
   declarations: [
@@ -24,14 +24,15 @@ import { StepCounterService } from './service/step-counter.service';
     ThankYouComponent,
     GeneralNavbarComponent,
     StepCounterComponent,
-    SidebarComponent
+    SidebarComponent,
+    TransitionsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule
   ],
-  providers: [StepCounterService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

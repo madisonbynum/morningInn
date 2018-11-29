@@ -1,16 +1,16 @@
 <div id="sidebar">
-      <div id="contianerInOut">
+  <div id="contianerInOut">
+    <div class="btn-group"></div>
+      <div id="buttonSide">        
         <div class="checkCon">
           <label class="sideLabel">Check In&nbsp;&nbsp;</label>
-          <input class="inputSide" type="date">
+          <input class="inputSide" type="date" id="checkIn">
         </div>
         <div class="checkCon">
           <label class="sideLabel">Check Out&nbsp;&nbsp;</label>
-          <input class="inputSide" type="date">
+          <input class="inputSide" type="date" id="checkOut">
         </div>
-      </div>
-      <div class="btn-group"></div>
-      <div id="buttonSide">
+        <div id="buttonSide">
           <button routerLink="/viewRoom" (click)="submit()"id="nextButton" class="btn btn-primary" type="submit">Next Step</button>
             <div ngbDropdown class="d-inline-block">
               <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Advance Settings</button>
@@ -43,5 +43,8 @@
                 </a>
               </div>
             </div>
+        </div>
       </div>
+      <div class="btn-group"></div>    
   </div>
+</div>

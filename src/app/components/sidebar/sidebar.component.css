@@ -3,25 +3,23 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    width: 70vw;
-    height: 40vh;
+    /* width: 70vw;
+    height: 40vh; */
     margin-right: 30px;
     margin: 0 auto;    
     border-radius: 5px;
+    font-family: 'PT Sans', sans-serif;
 }
 .inputSide{
     padding: 0px;
     margin-right: 10px;
 }
-.checkCon{
-    padding: 0px;
-    margin: 0px;
-}
 .sideLabel{
    padding: 0px;
    margin: 2px;
    color: rgb(255, 255, 255);
-   font-family: Tahoma, Geneva, Verdana, sans-serif;
+   /* font-family: Tahoma, Geneva, Verdana, sans-serif; */
+   font-family: 'PT Sans', sans-serif;
 }
 #dropMenu{
     border: solid 2px rgb(195, 223, 255);
@@ -42,10 +40,13 @@ input{
     padding: 0px;
 }
 #nextButton{
-    margin-left:0px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    /* margin-left:0px; */
+    margin-left: 3vw;
+ 
+    /* margin-top: 5px;
+    margin-bottom: 5px; */
     width: 100px;
+    height: 32px;
     background:rgb(238, 163, 66);    
     color: white;
     border: none
@@ -58,10 +59,14 @@ input{
 }
 #dropdownBasic1{
     background: rgba(0, 0, 0, 0d);
-    color: rgb(238, 163, 66);
+    margin-left: 1.5vw;
+    /* color: rgb(238, 163, 66); */
+    color: white;
+    font-weight: 200;
     border: none;
     width: 150px;
-    margin: 5px;
+    height: 32px;
+    /* margin: 5px; */
 
 }
 #dropdownBasic1:active{
@@ -72,9 +77,9 @@ input{
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    width:90%;
+    /* width:90%; */
     background:rgb(105, 164, 231);
-    border-radius: 5px;
+    /* border-radius: 5px; */
     padding: 10px;
     
 }

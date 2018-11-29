@@ -45,9 +45,12 @@
 
 #link-list a, h1 {
 text-align: center;
-padding-left: 10px;
+/* padding-left: 10px; */
 padding-top: 10px;
 padding-right: 10px;
 font-size: 12pt;
 }
 
+#hotel-icon:hover{
+    cursor: pointer;
+}

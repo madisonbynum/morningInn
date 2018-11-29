@@ -8,22 +8,39 @@
     color: #f1c40f;
     background-repeat: no-repeat;
     height: 30vw;
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* alignging content inside jumbotron */
 #jumbotron-container{
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-content: center;
+    flex-direction: row-reverse;
+    /* justify-content: flex-end; */
+    /* align-content: center; */
+}
+
+#jumbotron-container > div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#move-right{
+    /* display: flex; */
+    /* justify-content: flex-end; */
 }
 
 /* text background inside jumbotron*/
 #text-background{
-    padding: 2vh;
+    padding: 3vh;
     background-color: black;
     opacity: .6;
     text-align: center;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+  
+
 }
 
 /* styling of the cards below the jumbotron */
