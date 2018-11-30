@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { StepCounterService } from 'src/app/service/step-counter.service';
+import { RoomsService } from 'src/app/service/rooms.service';
 
 @Component({
   selector: 'app-room-view',
@@ -8,11 +9,12 @@ import { StepCounterService } from 'src/app/service/step-counter.service';
 })
 export class RoomViewComponent implements OnInit {
 
-  constructor(private stepCounter: StepCounterService) {
+  constructor(private stepCounter: StepCounterService, private roomServ: RoomsService) {
 
   }
 
   ngOnInit() {
+    console.log(this.roomServ.room);
     this.stepCounter.step1();
   }
 

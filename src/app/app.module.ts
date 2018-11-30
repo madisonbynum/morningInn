@@ -13,7 +13,7 @@ import { GeneralNavbarComponent } from './components/general-navbar/general-navb
 import { StepCounterComponent } from './components/step-counter/step-counter.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { TransitionsComponent } from './components/transitions/transitions.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +30,8 @@ import { TransitionsComponent } from './components/transitions/transitions.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
